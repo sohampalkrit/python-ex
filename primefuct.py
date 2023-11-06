@@ -1,12 +1,19 @@
-x=int(input("enter a number="))
+n=int(input("Enter an integer:"))
+print("Factors are:")
 i=1
-c=0
-while i<=x:
-        if x%i==0:
-            c+=1
-        i+=1
-if c==2:
-        print("This is a prime number")
-else:
-        print("Not a prime number")
+while(i<=n):
+    k=0
+    if(n%i==0):
+        j=1
+        while(j<=i):
+            if(i%j==0):
+                k=k+1
+            j=j+1
+        if(k==2):
+            print(i)
+    i=i+1
+ 
+
+        
+
     
